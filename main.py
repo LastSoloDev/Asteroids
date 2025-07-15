@@ -36,8 +36,8 @@ def main():
         for a in asteroids:
             for s in shots:
                 if s.collision(a) == True:
-                    a.kill()
                     s.kill()
+                    a.split()
 
         for a in asteroids:
             if player.collision(a) == True:
