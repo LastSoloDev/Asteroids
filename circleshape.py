@@ -25,7 +25,6 @@ class CircleShape(pygame.sprite.Sprite):
         r_sum = self.radius + other_circle.radius
         distance = self.position.distance_to(other_circle.position)
         if r_sum > distance:
-            print(r_sum, distance)
             return True
         else:
             return False
